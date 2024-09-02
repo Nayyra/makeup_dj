@@ -1,0 +1,271 @@
+@media (max-width: 1150px) {
+          .section1{
+              height: 400px;
+          }
+          .imgsmiudas img{
+                    width: 200px;
+                    height: 200px;
+                    padding-left: 1rem;
+          }
+
+          .container1{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    height: 300px;
+          }
+          .text1{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
+
+          .text1 p{
+                    padding-top: 1rem;
+                    width: 60%;
+          }
+
+          .text2{
+                    width: 45%;
+                    font-size: 12px;
+                    padding-left: 3rem;
+          }
+          .text2 h2{
+                    font-size: 20px;
+          }
+
+          .text2 .ceo{
+                    font-size: 20px;
+                    padding-top: 1rem;
+          }
+
+          .about {
+                    height: 55em;
+          }
+
+          .ctnabout{
+                    display: block;
+          }
+
+          .imgabout{
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+          }
+
+          .cousers{
+                    height: 100em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+          }
+
+          .ctncousers{
+                    height: 80%;
+                    display: block;
+                    align-content: space-between;
+          }
+          
+
+          .natural {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 35rem;
+                    padding-bottom: 10px;
+          }
+          
+          .natural img{
+                    height: 70%;
+                    width: 75%;
+                    
+          }
+
+          .artistica{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    height: 35rem;
+                    padding-bottom: 10px;
+                    padding-top: 8em;
+          }
+          
+          .artistica img{
+                    height: 70%;
+                    width: 75%;
+                    
+          }
+
+          .shop{
+                    height: 80em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+          }
+
+          .ctnshop{
+                    width: 90%;
+                    height: 100%;
+          }
+          
+
+          .cards{
+                    width: 60%;
+                    height: 90%;
+                    display: flex;      
+                    align-items: center;
+                    flex-flow: wrap;
+                    
+          }
+          
+          .card{
+                    height: 35%;
+                    width: 37%;
+          }
+
+          .card img{
+                    height: 60%;
+                    width: 90%;
+          }
+
+          .contact{
+            height: 60em;
+
+  }
+  .ctncontatos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+  }
+
+  #txtctt {
+    width: 90%;
+}
+
+
+}
+
+@media (max-width: 1010px) {
+          .cards{
+                    width: 60%;
+                    height: 90%;
+                    display: flex;      
+                    align-items: center;
+                    flex-flow: wrap;
+                    
+          }
+          
+          .card{
+                    height: 35em;
+                    width: 90%;
+          }
+
+          .card img{
+                    height: 75%;
+                    width: 90%;
+          }
+
+          .shop{
+                    height: 180em;
+          }
+
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+          .imgsmiudas img{
+                    width: 100px;
+                    height: 100px;  
+                    padding-left: 1rem;
+          }
+          .text1 p{
+            padding-top: 1rem;
+            width: 100%;
+  }
+
+          .contact{
+                    height: 60em;
+
+          }
+          .ctncontatos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+          }
+
+          #txtctt {
+                    width: 90%;
+          }
+
+          .imgabout{
+                    height: 50%;
+
+          }
+
+          #txtabout{
+                    width: 90%;
+          }
+
+          .cousers{
+                    height: 90em;
+
+
+          }
+
+          
+          .natural img{
+                    height: 80%;
+                    width: 90%;
+                    
+          }
+
+          .artistica{
+                    padding-top: 3em;
+          }
+          
+          .artistica img{
+                    height: 80%;
+                    width: 90%;
+                    
+          }
+
+          #curso{
+                    width: 90%;
+          }
+
+          .ctnshop{
+                     width: 80%;
+          }
+
+          .cards{
+                    width: 90%;
+                    height: 90%;
+          }
+
+          .card{
+                    height: 23em;
+                    width: 100%;
+          }
+
+          .card img{
+                    height: 70%;
+                    width: 90%;
+          }
+
+          .shop{
+                    height: 140em;
+          }
+          .textitle p{
+            padding: 2rem;
+            width: 80%;
+   }
+        .contact-form {
+            width: 250px;
+            }
+
+
+}

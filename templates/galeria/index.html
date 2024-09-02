@@ -1,0 +1,248 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Glamup</title>
+          <link rel="stylesheet" href="{% static '/styles/style.css' %}">
+          <link rel="stylesheet" href="{% static '/styles/responsive.css' %}">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <a href="#" class="logo"><b>GLAMUP</b></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about us</a>
+            <a href="#cousers">cousers</a>
+            <a href="#shop">shop</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
+
+          <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up-long" style="color: #86654b;"></i></a>
+
+          <script>
+           function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            const logo = document.querySelector('.logo');
+            navbar.classList.toggle('active');
+            logo.style.display = logo.style.display === 'none' ? 'block' : 'none';
+        }
+              // Mostrar/ocultar o botão com base na rolagem
+              window.onscroll = function() {
+                  const button = document.querySelector('.back-to-top');
+                  if (document.documentElement.scrollTop > 100) {
+                      button.style.display = 'block';
+                  } else {
+                      button.style.display = 'none';
+                  }
+              };
+          </script>
+          <section class="headerimg">
+                    <div class="imgbaton">
+                              <div class="fff">
+                              <h3>Flawless.</h3>
+                              <h3>Fierce.</h3>
+                              <h3>Finish.</h3>
+                    </div>
+                    </div>
+          </section>
+          <section class="section1">
+                    <div class="container1">
+                              <div class="text1">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rerum id mollitia laudantium, quod non iure dolore quidem qui facere itaque, cumque culpa consequatur quos neque deserunt vero illo pariatur?</p>
+  
+                                        <div class="btndiv">
+                                                   <button class="btnshop" id="btnctt">
+                                                            <a href="#contact"></a>contato
+                                                  </button>
+                                         </div>
+                              </div>
+                              
+                              <div class="imgsmiudas">
+                                        <img src="{% static '/imgs/download (8).jpeg' %}" alt="ola">
+                                        <img src="{% static '/imgs/kit 3 gloss francine mini glosslicious marrom rosa e vermelho makeup make maquiagem gloss batom matte base esponja make.jpeg' %}" alt="ola">
+                                        <img src="{% static '/imgs/• Sérum Facial _ Linha MELU by Ruby Rose.jpeg' %}" alt="ola">
+                              </div>
+                    </div>
+          </section>
+
+          <section class="about" id="about" >
+                    <div class="ctnabout" >
+                              <div class="imgabout" >
+                                        <img src="{% static '/imgs/about.jpeg' %}" alt="">
+                              </div>
+                              <div class="textabout" >
+                                        <div class="text2" id="txtabout">
+                                        <p class="ceo">ceo</p>
+                                        <h2>Nayra Kethillyn</h2>
+                                        <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium tempora velit, omnis atque molestiae vel fugiat. </b></p>
+                                                  <br>
+                                                  <br>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, quam tempore quia id necessitatibus, unde quo, voluptatem maiores velit laboriosam dolorem. In porro pariatur eos consequuntur. Corporis hic reprehenderit enim?</p>
+                                        </div>
+                                        <div class="btndiv">
+                                                  <button class="btnshop">Contatos</button>
+                                        </div>
+                              </div>
+                    </div>
+          </section>
+
+          <section class="cousers" id="cousers">
+                    <section class="ctncousers">
+                              <div class="natural">      
+                              <img src="{% static '/imgs/secret tale.jpeg %'}" alt="">
+                              <div class="text2" id="curso">
+                                <h2>Maquiagem natural</h2>
+                                <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium tempora velit, omnis atque molestiae vel fugiat. </b></p>
+                                          <br>
+                                          
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, quam tempore quia id necessitatibus, unde quo, voluptatem maiores velit laboriosam dolorem. In porro pariatur eos consequuntur. Corporis hic reprehenderit enim?</p>
+                              </div>
+                              </div>
+
+                              <div class="artistica">
+                                <div class="text2" id="curso">
+                                  <h2>Maquiagem artisticas</h2>
+                                  <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium tempora velit, omnis atque molestiae vel fugiat. </b></p>
+                                            <br>
+                                            
+                                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, quam tempore quia id necessitatibus, unde quo, voluptatem maiores velit laboriosam dolorem. In porro pariatur eos consequuntur. Corporis hic reprehenderit enim?</p>
+                                </div>
+                                
+                                        <img src="{% static '/imgs/artisstica.jpeg' %}" alt="">
+                                      </div>
+                              </div>
+                    </section>
+          </section>
+
+          <section class="shop" >
+                    <div class="ctnshop">
+                              <div class="textitle">
+                                        <h2 id="shop">Online Shop</h2 >
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, commodi? Hic, adipisci eius itaque consequuntur doloribus provident sequi delectus magni quidem rerum eveniet asperiores voluptate fuga labore, voluptas ullam ea? Lorem ipsum dolor sit amet consectetur </p>
+                              </div>
+                    <div class="cards">
+                              <div class="card">
+                                        <img src="{% static '/imgs/serumdior.jpeg' %}" alt="">
+                                        <div class="legendas">
+                                                  <h2>Serum Dior</h2>
+                                                  <p>$0.00</p>
+                                                  <button class="btnCar">
+                                                            adicionar ao carrinho
+                                                  </button>
+
+                                        </div>
+                              </div>
+                              <div class="card">
+                                        <img src="{% static '/imgs/serumdior.jpeg' %}" alt="">
+                                        <div class="legendas">
+                                                  <h2>Serum Dior</h2>
+                                                  <p>$0.00</p>
+                                                  <button class="btnCar">
+                                                            adicionar ao carrinho
+                                                  </button>
+
+                                        </div>
+                              </div>
+                              <div class="card">
+                                        <img src="{% static '/imgs/serumdior.jpeg' %}" alt="">
+                                        <div class="legendas">
+                                                  <h2>Serum Dior</h2>
+                                                  <p>$0.00</p>
+                                                  <button class="btnCar">
+                                                           adicionar ao carrinho
+                                                  </button>
+
+                                        </div>
+                              </div>
+                              <div class="card">
+                                        <img src="{% static '/imgs/serumdior.jpeg' %}" alt="">
+                                        <div class="legendas">
+                                                  <h2>Serum Dior</h2>
+                                                  <p>$0.00</p>
+                                                  <button class="btnCar">
+                                                           <a href=""></a> adicionar ao carrinho
+                                                  </button>
+
+                                        </div>
+                              </div>
+                    </div>
+                    
+                  </div><button class="btnCar">Mais Opções</button>                              
+          </section>
+
+          <section class="contact"  id="contact">
+                    <div class="ctncontatos">
+                              <div class="text2" id="txtctt">
+                                        <h2>Contact</h2>
+                                        <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium tempora velit. </b></p>
+                                                  <br>
+                                                  <br>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, quam tempore quia id necessitatibus, unde quo, voluptatem maiores velit laboriosam dolorem. In porro pariatur eos consequuntur. Corporis hic reprehenderit enim? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quasi quia, aliquam molestiae.</p>
+                                        <p class="email"><b>Email </b></p>
+                                        <p>naykethillyn@gmail.com</p>
+                                        </div>
+
+                                        <div class="forms">
+                                        <div class="formulario">
+                                        <form class="contact-form">
+                                                  <label for="name">NAME</label>
+                                                  <input type="text" id="name" name="name" placeholder="Seu nome">
+                                          
+                                                  <label for="email">E-MAIL</label>
+                                                  <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                                          
+                                                  <label for="subject">SUBJECT</label>
+                                                  <input type="text" id="subject" name="subject" placeholder="Assunto">
+                                          
+                                                  <label for="message">MESSAGE</label>
+                                                  <textarea id="message" name="message" placeholder="Sua mensagem"></textarea>
+                                          
+                                                  <button type="submit">SUBMIT</button>
+                                              </form>
+                                        </div>
+                                        </div>
+                    </div>
+          </section>
+
+<footer class="footer">
+            <div class="containerFo">
+                <div class="footer-col">
+                  <h4>Menu</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">cousers</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">contact</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Contato</h4>
+                  <p>Email: contato@exemplo.com</p>
+                  <p>Telefone: (88) 99999-9999</p>
+                </div>
+                <div class="footer-col">
+                  <h4>Redes Sociais</h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+          </footer>
+</body>
+</html>
